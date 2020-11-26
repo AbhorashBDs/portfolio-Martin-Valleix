@@ -2654,12 +2654,12 @@ fieldset:disabled a.btn {
 }
 .btn-dark:hover {
   color: #fff;
-  background-color: #c9c39e;
+  background-color: #515151;
   border-color: #888888;
 }
 .btn-dark:focus, .btn-dark.focus {
   color: #fff;
-  background-color: #c9c39e;
+  background-color: #515151;
   border-color: #888888;
   box-shadow: 0 0 0 0.2rem rgba(136, 136, 136, 0.5);
 }

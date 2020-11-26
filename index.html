@@ -16,12 +16,19 @@
 		<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" type="text/css" /> 
 		<link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet" type="text/css" />
 		<link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet" type="text/css" />
-		<link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet" type="text/css" />		
+		<link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet" type="text/css" /> 
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" href= 
+			"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<script src= 
+			"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> 
+		</script> 
+		<script src= 
+			"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> 
+		</script>
 		<style type="text/css">
 		.fa_custom {
-		color: #0600ff
+		color: #0600ff !important
 		}
 		</style>
 		<script type="text/javascript" language="javascript">
@@ -30,19 +37,92 @@
 			window.close();
 		}
 		// Fin -->
-</script>
+		</script>
+		<script>
+		                 
+		$(document).ready(function() { 
+            var url = $("#Modal2").attr('src'); 
+            $("#portfolioModal2").on('hide.bs.modal', function() { 
+                $("#Modal2").attr('src', ''); 
+            }); 
+            $("#portfolioModal2").on('show.bs.modal', function() { 
+                $("#Modal2").attr('src', url); 
+            }); 
+        });        
+
+		$(document).ready(function() { 
+            var url = $("#Modal1").attr('src'); 
+            $("#portfolioModal1").on('hide.bs.modal', function() { 
+                $("#Modal1").attr('src', ''); 
+            }); 
+            $("#portfolioModal1").on('show.bs.modal', function() { 
+                $("#Modal1").attr('src', url); 
+            }); 
+        });
+		
+		$(document).ready(function() { 
+            var url = $("#Modal3").attr('src'); 
+            $("#portfolioModal3").on('hide.bs.modal', function() { 
+                $("#Modal3").attr('src', ''); 
+            }); 
+            $("#portfolioModal3").on('show.bs.modal', function() { 
+                $("#Modal3").attr('src', url); 
+            }); 
+        });
+		
+		$(document).ready(function() { 
+            var url = $("#Modal4").attr('src'); 
+            $("#portfolioModal4").on('hide.bs.modal', function() { 
+                $("#Modal4").attr('src', ''); 
+            }); 
+            $("#portfolioModal4").on('show.bs.modal', function() { 
+                $("#Modal4").attr('src', url); 
+            }); 
+        });
+		
+		$(document).ready(function() { 
+            var url = $("#Modal5").attr('src'); 
+            $("#portfolioModal5").on('hide.bs.modal', function() { 
+                $("#Modal5").attr('src', ''); 
+            }); 
+            $("#portfolioModal5").on('show.bs.modal', function() { 
+                $("#Modal5").attr('src', url); 
+            }); 
+        });
+		
+		$(document).ready(function() { 
+            var url = $("#Modal6").attr('src'); 
+            $("#portfolioModal6").on('hide.bs.modal', function() { 
+                $("#Modal6").attr('src', ''); 
+            }); 
+            $("#portfolioModal6").on('show.bs.modal', function() { 
+                $("#Modal6").attr('src', url); 
+            }); 
+        });
+		
+		$(document).ready(function() { 
+            var url = $("#Modal10").attr('src'); 
+            $("#portfolioModal10").on('hide.bs.modal', function() { 
+                $("#Modal10").attr('src', ''); 
+            }); 
+            $("#portfolioModal10").on('show.bs.modal', function() { 
+                $("#Modal10").attr('src', url); 
+            }); 
+        });
+		
+		
+		</script>
     </head>
-    <body id="page-top">
-        <!-- Navigation-->
+    <body id="page-top"> 
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/Portfolio.png" alt="" /></a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #c9c39e !important">
                     Menu
                     <i class="fas fa-bars ml-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ml-auto">
+                    <ul class="nav navbar-nav navbar-right text-uppercase ml-auto ">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio" style="font-family: 'Metamorphous', cursive;">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact" style="font-family: 'Metamorphous', cursive;">Contact</a></li>
                     </ul>
@@ -53,12 +133,12 @@
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading text-uppercase">Portfolio</div>
-                <div class="masthead-heading text-uppercase">Martin Valleix</div>
+                <div class="masthead-heading text-uppercase" style="line-height: 150%">Martin Valleix</div>
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="assets/CV_Martin_VALLEIX.pdf" target="_blank" style="font-family: 'Varela Round', sans-serif;">Télécharger mon CV</a>
             </div>
         </header>
         <!-- Portfolio Grid-->
-        <section class="page-section bg-light" style="background-color: #f8f8f8" id="portfolio">
+        <section class="page-section bg-light" style="background-color: #767771 !important" id="portfolio">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase" style="font-family: 'Varela Round', sans-serif; color: #202222 !important">Portfolio</h2>
@@ -233,8 +313,9 @@
 				</div>
 			</div>
         </section>
+		
         <!-- Footer-->
-        <footer class="footer py-4" style="background-color: #c9c39e !important">
+        <footer class="footer py-4" style="background-color: #767771 !important">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-12 text-lg-center">Copyright © Portfolio Martin Valleix 2020</div>
@@ -243,8 +324,10 @@
                 </div>
             </div>
         </footer>
+		
         <!-- Portfolio Modals-->
         <!-- Modal 1-->
+		
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -260,9 +343,14 @@
 									<p class="text-justify"><span class="font-weight-bold">Contexte :</span> Ce projet a été créé pour remplacer le stage de fin d’études de ma Licence Professionnelle, ce dernier étant devenu trop difficile à trouver suite à la crise sanitaire liée à la COVID-19. Nous avons réalisé ce jeu à deux, après que nous ayons choisi le pitch parmi un lot de pitchs proposés par l’équipe pédagogique. Nous avons eu quatre mois pour réaliser le jeu.</p>
 									<p class="text-justify"><span class="font-weight-bold">Description :</span> Ce jeu se situe en l’an 3000, l’effondrement de nos sociétés a eu lieu et les survivants se sont regroupés en communauté locale. Ils ont réussi à atteindre un équilibre entre la nourriture et l’eau et, désormais, ils cherchent à comprendre pourquoi les sociétés d’antan se sont écroulées. Pour ce faire, ils ont mis en place une guilde d’archéologues afin de mener des recherches. Ainsi, vous incarnez le chef de cette guilde, vous dirigerez une équipe d’archéologues ayant tous un caractère et des compétences propres. Vous devrez donc répondre aux questions que se posent les résidents de la communauté, en demandant aux bons archéologues d’aller chercher des objets dans des lieux en ruine appartenant à l’ancienne civilisation.</p>
 									<p class="text-justify"><span class="font-weight-bold">Rôle :</span> Nous nous sommes occupés du Game Design à deux, j’ai ensuite programmé seul le jeu et mon coéquipier s’est occupé des graphismes. Pour le sound design, nous avons cherché tous les deux des sons pour le jeu et je me suis ensuite chargé de les modifier lorsque c’était nécessaire.</p>
-									<object width="660" height="400"
-										data="https://www.youtube.com/embed/uaDQB8lOlTk">
-									</object> 
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" id="Modal1" width="450" height="350"
+													src= 
+													"https://www.youtube.com/watch?v=xNFgixkO1S4"
+													frameborder="0" allowfullscreen> 
+										</iframe>
+									</div>
+									<br></br>
 									<a class="btn btn-primary" href="https://valleix-martin.itch.io/modern-times-archeologist" target="_blank">Lien vers la page itch.io</a>
                                     <br></br>
 									<button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -277,24 +365,32 @@
             </div>
         </div>
         <!-- Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal close" data-dismiss="modal" aria-hidden="true" ><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Taiga</h2>
+                                    <h2 class="text-uppercase">Taiga </h2>
                                     <p class="item-intro text-muted">Jeu vidéo</p>
                                     <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Taiga.png" alt="" /> -->
 									<p class="text-justify"><span class="font-weight-bold">Context :</span> Projet de fin d’étude de ma Licence. Ce projet a été réalisé à sept étudiants, en quatre mois. Suite à la crise sanitaire de la COVID nous avons néanmoins eu un peu plus de temps pour le peaufiner. Le thème des projets de fin d’étude de cette année était la Carewave, un mouvement qui vise à imaginer un futur où chacun prendrait soin des uns et des autres.</p>
 									<p class="text-justify"><span class="font-weight-bold">Description :</span> Dans ce jeu, vous incarnez un trappeur qui vit seul dans la taïga, suite au décès de sa femme. Vous allez devoir l’accompagner à travers chaque étape du deuil. Cette démo correspond à la première étape (choc/ déni du deuil) et il faudra aider le trappeur en l’amenant à surmonter ses crises de paniques grâce à des exercices de respiration. Les graphismes ont été soignés afin d’avoir une ambiance chill et rude à la fois.</p>
 									<p class="text-justify"><span class="font-weight-bold">Rôle :</span> Dans ce projet, j’ai été principalement développeur mais je me suis également occupé de shader et des particules sur Unity. Nous avons tous participé à la conception du game design.</p>
-									<object width="660" height="400"
-										data="https://www.youtube.com/embed/knS04lE9oQ8">
-									</object> 
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" id="Modal2" width="450" height="350"
+												src= 
+												"https://www.youtube.com/embed/knS04lE9oQ8"
+												frameborder="0" allowfullscreen> 
+										</iframe>  
+									</div>
+									<br></br>
+									<!-- <object width="660" height="400" -->
+										<!-- data="https://www.youtube.com/embed/knS04lE9oQ8"> -->
+									<!-- </object>  -->
 									<a class="btn btn-primary" href="https://ghostmoonk.itch.io/taiga" target="_blank">Lien vers la page itch.io</a>
                                     <br></br>
 									<button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -324,9 +420,14 @@
 									<p class="text-justify"><span class="font-weight-bold">Context :</span> Ce jeu a été réalisé lors de la Global Game Jam 2020 dont le thème était «repair». Nous étions une équipe de sept et nous étions regroupés à l’ISART (Paris).</p>
 									<p class="text-justify"><span class="font-weight-bold">Description :</span> Dans le jeu, on incarne un forgeron cyberpunk qui doit réparer des armes. Le joueur doit appuyer sur les touches au bon moment pour réussir le QTE et réparer l’arme.</p>
 									<p class="text-justify"><span class="font-weight-bold">Rôle :</span> J’étais développeur dans ce projet et je me suis également chargé de quelques détails graphiques relatifs à Unity (Skybox, Particles...)<p>
-									<object width="660" height="400"
-										data="https://www.youtube.com/embed/uaDQB8lOlTk">
-									</object> 
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" id="Modal3" width="450" height="350"
+												src= 
+												"https://www.youtube.com/embed/uaDQB8lOlTk"
+												frameborder="0" allowfullscreen> 
+										</iframe>
+									</div>		
+									<br></br>
 									<a class="btn btn-primary" href="https://kikkawa.itch.io/forge" target="_blank">Lien vers la page itch.io</a>
                                     <br></br>
 									<button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -355,9 +456,14 @@
                                     <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/LaForteresseSombre.png" alt="" /> -->
 									<p class="text-justify"><span class="font-weight-bold">Context :</span> Un exercice de création de jeu en solo, dans le cadre de la licence, avec trois semaines pour le réaliser. Parmi les contraintes imposées, ce jeu devait notamment être conçu sur Unreal Engine et comprendre plusieurs gameplay différents.</p>
 									<p class="text-justify"><span class="font-weight-bold">Description :</span> Dans ce jeu, vous incarnez une fée qui est retenue prisonnière d’un donjon et qui doit s’échapper sans se faire prendre par les gardes. Vous devrez retrouver différentes graines permettant d’ouvrir des chemins à travers les murs, afin de vous évader en un seul morceau.</p>
-									<object width="660" height="400"
-										data="https://www.youtube.com/embed/AF8tPPTVJ-A">
-									</object> 
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" id="Modal4" width="450" height="350"
+												src= 
+												"https://www.youtube.com/embed/AF8tPPTVJ-A"
+												frameborder="0" allowfullscreen> 
+										</iframe>
+									</div>
+									<br></br>
 									<!-- <a class="btn btn-primary" href="https://kikkawa.itch.io/forge" target="_blank">Lien vers la page itch.io</a> -->
                                     <!-- <br></br> -->
 									<button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -387,9 +493,14 @@
 									<p class="text-justify"><span class="font-weight-bold">Context :</span> Ce jeu a été réalisé lors de l’Unijam 2019, une jam regroupant les étudiants de la Licence de Bobigny et les étudiants de l’ENSIIE option JIN. Nous avions une équipe de sept personnes, constituée de membres de Bobigny et des JIN. Le thème de cette Unijam était «Ne craignez pas d’être lent, craignez seulement d’être à l’arrêt».</p>
 									<p class="text-justify"><span class="font-weight-bold">Description :</span> Dans ce jeu, vous contrôlez un mineur qui doit extraire un certain nombre de blocs de cristaux avant la fin du temps imparti. Mais attention, lorsque vous minez des cristaux, cela relâche du gaz. Par conséquent, si vous être trop rapide en minant les cristaux, vous mourrez de suffocation et c’est le game over. Il faut donc prendre en compte le temps que le gaz met à sortir de la salle et avancer petit à petit. Le jeu est fait en voxel, ce qui lui donne une esthétique bien particulière.</p>
 									<p class="text-justify"><span class="font-weight-bold">Rôle :</span> Dans ce projet, j’ai été level designer et je me suis également occupé de l’équilibrage.</p>
-									<object width="660" height="400"
-										data="https://www.youtube.com/embed/AF8tPPTVJ-A">
-									</object> 
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" id="Modal5" width="450" height="350"
+												src= 
+												"https://www.youtube.com/embed/AF8tPPTVJ-A"
+												frameborder="0" allowfullscreen> 
+										</iframe>
+									</div>
+									<br></br>
 									<a class="btn btn-primary" href="https://kikkawa.itch.io/coup-de-grisou" target="_blank">Lien vers la page itch.io</a>
                                     <br></br>
 									<button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -419,9 +530,14 @@
 									<p class="text-justify"><span class="font-weight-bold">Context :</span> Jeu réalisé en tant que workshop d’une semaine, lors de ma Licence, en équipe de 5. La seule contrainte que nous avions est que le jeu devait être en 2D.</p>
 									<p class="text-justify"><span class="font-weight-bold">Description :</span> Dans ce jeu, vous contrôlez un petit cristal qui se prénomme Litos. Vous devez défendre votre royaume contre les ténèbres, matérialisées sous forme de monstres, qui veulent détruire votre nexus. Votre but est de les en empêcher. Pour cela, vous pourrez récupérer des cristaux sur la carte, afin de construire des tours. Vous pouvez également attaquer directement les ennemis qui vous poursuivront alors un court instant.</p>
 									<p class="text-justify"><span class="font-weight-bold">Rôle :</span> Sur ce projet, je me suis occupé uniquement de la programmation, avec un autre de mes camarades.</p>
-									<object width="660" height="400"
-										data="https://www.youtube.com/embed/AF8tPPTVJ-A">
-									</object> 
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" id="Modal6" width="450" height="350"
+												src= 
+												"https://www.youtube.com/embed/AF8tPPTVJ-A"
+												frameborder="0" allowfullscreen> 
+										</iframe>
+									</div>
+									<br></br>
 									<a class="btn btn-primary" href="https://valleix-martin.itch.io/monolight" target="_blank">Lien vers la page itch.io</a>
                                     <br></br>
 									<button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -491,12 +607,12 @@
 									<p class="text-center" style="font-style: italic">Quelques exemples de cartes</p>
 									<div class="row">
 										<div class="col-6">
-											<img width="282px" height="402px" src="assets/img/Consuno/Carte_3_électricité.png" alt="Électricité"></img>
-											<img width="282px" height="402px" src="assets/img/Consuno/Carte 4 dechet.png" alt="Déchet"></img>
+											<img class="img-fluid" width="282px" height="402px" src="assets/img/Consuno/Carte_3_électricité.png" alt="Électricité"></img>
+											<img class="img-fluid" width="282px" height="402px" src="assets/img/Consuno/Carte 4 dechet.png" alt="Déchet"></img>
 										</div>
 										<div class="col-6">
-											<img width="282px" height="402px" src="assets/img/Consuno/Carte 5 chaleur.png" alt="Chaleur"></img>
-											<img width="282px" height="402px" src="assets/img/Consuno/Carte 8 eau.png" alt="Eau"></img>
+											<img class="img-fluid" width="282px" height="402px" src="assets/img/Consuno/Carte 5 chaleur.png" alt="Chaleur"></img>
+											<img class="img-fluid" width="282px" height="402px" src="assets/img/Consuno/Carte 8 eau.png" alt="Eau"></img>
 											
 										</div>
 									</div>
@@ -530,7 +646,7 @@
 									<!-- <object width="660" height="400" -->
 										<!-- data="https://www.youtube.com/embed/AF8tPPTVJ-A"> -->
 									<!-- </object>  -->
-									<img src="assets/img/Polish a Knife/Couteau 2.png" alt="Couteau"></img><img src="assets/img/Polish a Knife/Erreur avec etincelles.png" alt="Polissage"></img>
+									<img class="img-fluid" src="assets/img/Polish a Knife/Couteau 2.png" alt="Couteau"></img><img class="img-fluid" src="assets/img/Polish a Knife/Erreur avec etincelles.png" alt="Polissage"></img>
 									<a class="btn btn-primary" href="http://ptig.crea.pro/7_1/" target="_blank">Plus d'information concernant le déroulé du projet</a>
                                     <br></br>
 									<button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -560,9 +676,14 @@
 									<p class="text-justify"><span class="font-weight-bold">Context :</span> Un petit escape game réalisé en tant qu’exercice, en deux mois et demi, par équipe de quatre. Nous avions quelques contraintes de programmation à respecter, mais nous étions libres sur l’environnement et la narration.</p>
 									<p class="text-justify"><span class="font-weight-bold">Description :</span> Le joueur est enfermé dans un manoir et doit en sortir en résolvant les énigmes avant la fin du temps imparti. Il y a trois salles différentes et chacune contient une énigme à résoudre pour passer à la salle suivante.</p>
 									<p class="text-justify"><span class="font-weight-bold">Rôle :</span> Nous étions deux programmeurs et deux modélisateurs. J’ai été programmeur, en binôme. Je me suis également occupé des énigmes.</p>
-									<object width="660" height="400"
-										data="https://www.youtube.com/embed/O439-flqrWQ">
-									</object> 
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" id="Modal10" width="450" height="350"
+												src= 
+												"https://www.youtube.com/embed/O439-flqrWQ"
+												frameborder="0" allowfullscreen> 
+										</iframe>
+									</div>
+									<br></br>
 									<!-- <a class="btn btn-primary" href="http://ptig.crea.pro/7_1/" target="_blank">Plus d'information concernant le déroulé du projet</a> -->
                                     <!-- <br></br> -->
 									<button class="btn btn-primary" data-dismiss="modal" type="button">
