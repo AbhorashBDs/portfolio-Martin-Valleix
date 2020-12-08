@@ -372,7 +372,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 2rem;
-  font-family: 'Metamorphous', cursive !important
+  font-family: 'Merienda One', cursive; !important
 }
 
 h3, .h3 {
@@ -10116,7 +10116,7 @@ img::-moz-selection {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
+  padding-top: 10,5rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
@@ -10137,24 +10137,24 @@ header.masthead .masthead-heading {
   font-weight: 700;
   line-height: 3.25rem;
   margin-bottom: 2rem;
-  font-family: 'Metamorphous', cursive;
+  font-family: 'Merienda One', cursive;
 }
 
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 17rem;
-    padding-bottom: 23rem;
+    padding-bottom: 10rem;
   }
   header.masthead .masthead-subheading {
     font-size: 3rem;
     line-height: 2.25rem;
-    margin-bottom: 5rem;
+    margin-bottom: 9rem;
   }
   header.masthead .masthead-heading {
     font-size: 6rem;
     font-weight: 700;
     line-height: 4.5rem;
-    margin-bottom: 12rem;
+    margin-bottom: 8rem;
   }
 }
 #portfolio .portfolio-item {
@@ -10192,7 +10192,7 @@ header.masthead .masthead-heading {
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
-  font-family: 'Metamorphous', cursive;
+  font-family: 'Merienda One', cursive;
   font-weight: 700;
   margin-bottom: 0;
 }
@@ -10203,7 +10203,8 @@ header.masthead .masthead-heading {
 
 .portfolio-modal .modal-dialog {
   margin: 1rem;
-  max-width: 100vw;
+  max-width: 50%;
+  margin-left: 25%;
 }
 .portfolio-modal .modal-content {
   padding-top: 6rem;
