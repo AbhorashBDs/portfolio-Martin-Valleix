@@ -39,7 +39,17 @@
 		// Fin -->
 		</script>
 		<script>
-		                 
+		
+		$(document).ready(function() { 
+            var url = $("#Modal16").attr('src'); 
+            $("#portfolioModal16").on('hide.bs.modal', function() { 
+                $("#Modal16").attr('src', ''); 
+            }); 
+            $("#portfolioModal16").on('show.bs.modal', function() { 
+                $("#Modal16").attr('src', url); 
+            }); 
+        });
+		
 		$(document).ready(function() { 
             var url = $("#Modal2").attr('src'); 
             $("#portfolioModal2").on('hide.bs.modal', function() { 
@@ -144,6 +154,96 @@
                     <h2 class="section-heading text-uppercase" style="font-family: 'Varela Round', sans-serif; color: #202222 !important">Projets</h2>
                 </div>
 				<div class="row">
+					<div class="col-lg-12 mb-5">
+						<div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal16">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/Atone.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Atone</div>
+                                <div class="portfolio-caption-subheading text-muted">Jeu vidéo</div>
+								<div class="portfolio-caption-subheading text-muted">Gestionnaire de projet, Game Designer, Level Designer</div>
+                            </div>
+                        </div>
+					</div>
+					<div class="col-lg-12 mb-5">
+						<div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal15">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/La Fresque du Climat.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Fresque du climat</div>
+                                <div class="portfolio-caption-subheading text-muted">Serious Game Prototype</div>
+								<div class="portfolio-caption-subheading text-muted">Game Designer, Programmeur</div>
+                            </div>
+                        </div>
+					</div>
+					<div class="col-lg-12 mb-5">
+						<div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal14">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/Edmond and The Fraudulent Ghost.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Edmond and The Fraudulent Ghost</div>
+                                <div class="portfolio-caption-subheading text-muted">Jeu vidéo</div>
+								<div class="portfolio-caption-subheading text-muted">Game Designer, Level Designer, Level Builder</div>
+                            </div>
+                        </div>
+					</div>
+					<div class="col-lg-12 mb-5">
+						<div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal13">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/The Last Punk.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">The Last Punk</div>
+                                <div class="portfolio-caption-subheading text-muted">Jeu vidéo</div>
+								<div class="portfolio-caption-subheading text-muted">Level Designer, Programmeur</div>
+                            </div>
+                        </div>
+					</div>
+					<div class="col-lg-12 mb-5">
+						<div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal12">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/WizardBreak.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Wizard Break</div>
+                                <div class="portfolio-caption-subheading text-muted">Jeu vidéo</div>
+								<div class="portfolio-caption-subheading text-muted">Game Designer, Level Designer, Programmeur</div>
+                            </div>
+                        </div>
+					</div>
+					<div class="col-lg-12 mb-5">
+						<div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal11">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/La Nouvelle.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">La Nouvelle</div>
+                                <div class="portfolio-caption-subheading text-muted">Jeu vidéo</div>
+								<div class="portfolio-caption-subheading text-muted">Game Designer, Animateur 2D, Level Builder</div>
+                            </div>
+                        </div>
+					</div>
 					<div class="col-lg-12 mb-5">
 						<div class="portfolio-item">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
@@ -337,6 +437,279 @@
         </footer>
 		
         <!-- Portfolio Modals-->
+		<!-- Modal 16-->
+        <div class="portfolio-modal modal fade" id="portfolioModal16" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Atone</h2>
+									<p class="text-center"><span class="text-important">En cours de réalisation</span></p>
+                                    <p class="item-intro text-muted">Jeu vidéo</p>
+									<p class="text-justify"><span class="font-weight-bold">Contexte :</span> Jeu réalisé en <span class="font-weight-bold">cinq mois</span> avec une équipe de <span class="font-weight-bold">quatorze personnes</span> dans le cadre du Master. Collaboration entre <span class="font-weight-bold">première année</span>, <span class="font-weight-bold">deuxième année</span> ainsi que des élèves d’un diplôme d’établissement en <span class="font-weight-bold">sound design et composition</span>.</p>
+									<p class="text-justify"><span class="font-weight-bold">Description :</span> Les <span class="font-weight-bold">Minors</span> sont une race extraterrestre colonisée par les humains. Vous incarnez l'un d'entre eux et vous subirez l’épreuve du <span class="font-weight-bold">Diapason</span> ayant pour objectif de vous replonger dans une <span class="font-weight-bold">transe aliénante</span> servant à garder le contrôle de la population.</p>
+									<p class="text-justify"><span class="font-weight-bold">Gameplay :</span> Ce jeu de <span class="font-weight-bold">rythme</span> à la <span class="font-weight-bold">première personne</span> vous demandera de surmonter les différents <span class="font-weight-bold">obstacles</span> se dressant devant vous en effectuant toutes vos actions suivant un rythme défini.</p>
+									<p class="text-justify"><span class="font-weight-bold">Gestion de projet :</span> <span class="font-weight-bold">Co-gestion</span> de tout le projet à deux, organisation des <span class="font-weight-bold">réunions</span>, mis à jour de <span class="font-weight-bold">l’avancement du projet</span> et de chacun, relation avec les <span class="font-weight-bold">encadrants de l’université</span>.</p>
+									<p class="text-justify"><span class="font-weight-bold">Game Design :</span> Co-conception du <span class="font-weight-bold">game design</span>, écriture de <span class="font-weight-bold">documents</span>.</p>
+									<p class="text-justify"><span class="font-weight-bold">Level Designer :</span> Co-conception des <span class="font-weight-bold">niveaux du jeu</span>.</p>
+									<p class="text-justify"><span class="font-weight-bold">Outils :</span> <span class="font-weight-bold">Unity</span> comme moteur de jeu, <span class="font-weight-bold">Monday</span> comme gestion de projet, <span class="font-weight-bold">Photoshop</span> pour faire des croquis.</p>
+									<!-- <div class="embed-responsive embed-responsive-16by9"> -->
+										<!-- <iframe class="embed-responsive-item" id="Modal1" width="450" height="350" -->
+													<!-- src=  -->
+													<!-- "https://www.youtube.com/embed/xNFgixkO1S4" -->
+													<!-- frameborder="0" allowfullscreen>  -->
+										<!-- </iframe> -->
+									<!-- </div> -->
+									<!-- <p class="text-center" style="font-style: italic; margin-top: 10px">Let's play intro</p> -->
+									<!-- <br></br> -->
+									<img class="img-fluid" src="assets/img/portfolio/img/Atone Visuel.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Visuel du prototype actuel</p></img>
+									<a class="btn btn-primary" href="https://atone-master-hic.itch.io/atone" target="_blank">Lien vers la page itch.io en construction</a>
+                                    <br></br>
+									<button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Revenir au Portfolio
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- Modal 15-->
+        <div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Fresque du climat</h2>
+                                    <p class="item-intro text-muted">Serious Game</p>
+									<p class="text-justify"><span class="font-weight-bold">Contexte :</span> <span class="font-weight-bold">Prototype</span> d'un serious game réalisé à partir d’un <span class="font-weight-bold">premier exemplaire existant</span> lors d’un stage de <span class="font-weight-bold">cinq mois</span> dans le studio <span class="font-weight-bold">Ikigai</span>. Je travaillais <span class="font-weight-bold">seul</span> sur le projet avec la supervision et les conseils d’un <span class="font-weight-bold">directeur créatif</span> et d’un <span class="font-weight-bold">lead programmeur</span>.</p>
+									<p class="text-justify"><span class="font-weight-bold">Description :</span> Le projet est une adaptation de <span class="font-weight-bold">La Fresque du Climat</span>, un atelier de <span class="font-weight-bold">sensibilisation écologique</span>, en <span class="font-weight-bold">application mobile</span>. Vous devrez <span class="font-weight-bold">fusionner</span> des éléments se trouvant dans la fresque pour débloquer les <span class="font-weight-bold">cartes</span> de l’atelier original.</p>
+									<p class="text-justify"><span class="font-weight-bold">Gameplay :</span> Vous devrez fusionner des éléments grâce à un système de <span class="font-weight-bold">drag & drop</span>. Vous découvrirez ainsi d’autres éléments qui permettront de <span class="font-weight-bold">révéler des cartes</span>. Le but est de posséder toutes les cartes.</p>
+									<p class="text-justify"><span class="font-weight-bold">Game Design :</span> <span class="font-weight-bold">Remaniement</span> du design original</p>
+									<p class="text-justify"><span class="font-weight-bold">Programmeur :</span> Programmation du <span class="font-weight-bold">second prototype</span> à partir d’une base existante.</p>
+									<p class="text-justify"><span class="font-weight-bold">Outils :</span> <span class="font-weight-bold">Unity</span> comme moteur de jeu, <span class="font-weight-bold">Visual Studio</span> comme outil de programmation. <span class="font-weight-bold">Google Sheet</span> pour le game design.</p>
+									<!-- <div class="embed-responsive embed-responsive-16by9"> -->
+										<!-- <iframe class="embed-responsive-item" id="Modal1" width="450" height="350" -->
+													<!-- src=  -->
+													<!-- "https://www.youtube.com/embed/xNFgixkO1S4" -->
+													<!-- frameborder="0" allowfullscreen>  -->
+										<!-- </iframe> -->
+									<!-- </div> -->
+									<!-- <p class="text-center" style="font-style: italic; margin-top: 10px">Let's play intro</p> -->
+									<!-- <br></br> -->
+									<img class="img-fluid" src="assets/img/portfolio/img/La Fresque du Climat CarteDecouverte.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Découverte d'une carte</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/La Fresque du Climat InfoObjet.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Informations sur l'élément</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/La Fresque du Climat SituationOcean.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Exemple d'une situation avancée près de l'océan</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/La Fresque du Climat SituationRiviere.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Exemple d'une situation avancée près de la rivière</p></img>
+									<button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Revenir au Portfolio
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- Modal 14-->
+        <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Edmond and The Fraudulent Ghost</h2>
+                                    <p class="item-intro text-muted">Jeu vidéo</p>
+									<p class="text-justify"><span class="font-weight-bold">Contexte :</span> Jeu réalisé lors de la <span class="font-weight-bold">Global Game Jam 2022</span> avec une équipe de <span class="font-weight-bold">huit</span>, en travaillant <span class="font-weight-bold">partiellement</span> durant le week-end.</p>
+									<p class="text-justify"><span class="font-weight-bold">Description :</span> Vous incarnez un huissier venu pour une saisie immobilière dans un <span class="font-weight-bold">manoir hanté</span>. Il faudra échapper au <span class="font-weight-bold">fantôme</span> qui ne réagit qu’à la <span class="font-weight-bold">lumière</span> et au <span class="font-weight-bold">son</span>.</p>
+									<p class="text-justify"><span class="font-weight-bold">Gameplay :</span> Dans ce jeu, vous devez atteindre la <span class="font-weight-bold">sortie du manoir</span> sans vous faire attraper par le fantôme. Ce dernier se rapproche si vous <span class="font-weight-bold">percutez des objets</span> en faisant du bruit et si vous <span class="font-weight-bold">allumez la lumière</span>. Il faudra donc éclairer avec parcimonie pour se rappeler du chemin sans attirer le fantôme.</p>
+									<p class="text-justify"><span class="font-weight-bold">Game Design :</span> Co-conception du game design.</p>
+									<p class="text-justify"><span class="font-weight-bold">Level Designer :</span> Conception <span class="font-weight-bold">papier</span> et <span class="font-weight-bold">intégration</span> des niveaux.</p>
+									<p class="text-justify"><span class="font-weight-bold">Outils :</span> <span class="font-weight-bold">Unity</span> pour le moteur de jeu, <span class="font-weight-bold">Photoshop</span> pour dessiner les niveaux.</p>
+									<!-- <div class="embed-responsive embed-responsive-16by9"> -->
+										<!-- <iframe class="embed-responsive-item" id="Modal1" width="450" height="350" -->
+													<!-- src=  -->
+													<!-- "https://www.youtube.com/embed/xNFgixkO1S4" -->
+													<!-- frameborder="0" allowfullscreen>  -->
+										<!-- </iframe> -->
+									<!-- </div> -->
+									<!-- <p class="text-center" style="font-style: italic; margin-top: 10px">Let's play intro</p> -->
+									<!-- <br></br> -->
+									<img class="img-fluid" src="assets/img/portfolio/img/EATFGMenu.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Menu</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/EATFG LightPhase.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Phase "Éclairé"</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/EATFG BlackPhase.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Phase "Pénombre"</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/EATFG BlackToLight.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Transition "Pénombre" à "Éclairé"</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/EATFG LastLevel.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Dernier niveau</p></img>
+									<a class="btn btn-primary" href="https://valleix-martin.itch.io/edmond-and-the-fraudlent-ghost" target="_blank">Lien vers la page itch.io</a>
+                                    <br></br>
+									<button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Revenir au Portfolio
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- Modal 13-->
+        <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">The Last Punk</h2>
+                                    <p class="item-intro text-muted">Jeu vidéo</p>
+									<p class="text-justify"><span class="font-weight-bold">Contexte :</span> Jeu réalisé à <span class="font-weight-bold">quatre</span> dans le cadre d’un exercice du Master.</p>
+									<p class="text-justify"><span class="font-weight-bold">Description :</span> Vous incarnez un humain enlevé par un génie du mal, concepteur de <span class="font-weight-bold">robots maléfiques</span>. Il faudra vous enfuir en évitant les robots. Vous pourrez dialoguer avec l’antagoniste sur un ton <span class="font-weight-bold">décalé</span> et <span class="font-weight-bold">humoristique</span>.</p>
+									<p class="text-justify"><span class="font-weight-bold">Gameplay :</span> Vous devez atteindre la sortie en vous déplaçant sur un <span class="font-weight-bold">quadrillage</span>, les robots <span class="font-weight-bold">avancent</span> à chacun de <span class="font-weight-bold">vos mouvements</span> en suivant un pattern précis. Si leur lampe torche vous atteint, vous recommencez.</p>
+									<p class="text-justify"><span class="font-weight-bold">Programmeur :</span> Programmation des <span class="font-weight-bold">principales fonctionnalités</span>.</p>
+									<p class="text-justify"><span class="font-weight-bold">Level Designer :</span> Réalisation du <span class="font-weight-bold">deuxième niveau</span>.</p>
+									<p class="text-justify"><span class="font-weight-bold">Outils :</span> <span class="font-weight-bold">Unity</span> pour le moteur de jeu avec <span class="font-weight-bold">Inkle</span> pour les dialogues, <span class="font-weight-bold">Visual Studio</span> pour la programmation.</p>
+									<!-- <div class="embed-responsive embed-responsive-16by9"> -->
+										<!-- <iframe class="embed-responsive-item" id="Modal1" width="450" height="350" -->
+													<!-- src=  -->
+													<!-- "https://www.youtube.com/embed/xNFgixkO1S4" -->
+													<!-- frameborder="0" allowfullscreen>  -->
+										<!-- </iframe> -->
+									<!-- </div> -->
+									<!-- <p class="text-center" style="font-style: italic; margin-top: 10px">Let's play intro</p> -->
+									<!-- <br></br> -->
+									<img class="img-fluid" src="assets/img/portfolio/img/The Last Punk Dialogue.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Dialogue</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/The Last PunkChoix.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Choix de dialogue</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/The Last Punk Dialogue chanson.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Dialogue humoristique</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/The Last Punk Niveau 1.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Premier niveau</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/The Last Punk Niveau 2.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Deuxième niveau</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/The Last Punk Dialogue Rasp.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Antagoniste</p></img>
+									<a class="btn btn-primary" href="https://valleix-martin.itch.io/the-last-punk" target="_blank">Lien vers la page itch.io</a>
+                                    <br></br>
+									<button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Revenir au Portfolio
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- Modal 12-->
+        <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Wizard Break</h2>
+                                    <p class="item-intro text-muted">Jeu vidéo</p>
+									<p class="text-justify"><span class="font-weight-bold">Contexte :</span> Jeu réalisé en <span class="font-weight-bold">deux jours</span>, à <span class="font-weight-bold">quatre</span> dans le cadre d’un exercice du master.</p>
+									<p class="text-justify"><span class="font-weight-bold">Description :</span> Vous incarnez un chevalier qui <span class="font-weight-bold">repousse</span> les boules de feu grâce à son <span class="font-weight-bold">bouclier</span>. Il faudra faire en sorte de vaincre le <span class="font-weight-bold">magicien</span> en lui <span class="font-weight-bold">renvoyant</span> son projectile enflammé.</p>
+									<p class="text-justify"><span class="font-weight-bold">Gameplay :</span> Vous devrez <span class="font-weight-bold">orienter</span> votre bouclier pour vous protéger d’une boule de feu <span class="font-weight-bold">rebondissante</span> lancée par un terrible magicien des flammes. Votre objectif sera de lui renvoyer sa balle afin de le vaincre.</p>
+									<p class="text-justify"><span class="font-weight-bold">Game Design :</span> Conception du <span class="font-weight-bold">game design</span> et de <span class="font-weight-bold">l’idée originale</span>.</p>
+									<p class="text-justify"><span class="font-weight-bold">Programmeur :</span> Réalisation de toute la programmation.</p>
+									<p class="text-justify"><span class="font-weight-bold">Level Designer :</span> Design du <span class="font-weight-bold">premier</span> niveau.</p>
+									<p class="text-justify"><span class="font-weight-bold">Outils :</span> <span class="font-weight-bold">Unity</span> pour le moteur de jeu, <span class="font-weight-bold">Visual Studio</span> pour la programmation</p>
+									<!-- <div class="embed-responsive embed-responsive-16by9"> --><
+										<!-- <iframe class="embed-responsive-item" id="Modal1" width="450" height="350" -->
+													<!-- src=  -->
+													<!-- "https://www.youtube.com/embed/xNFgixkO1S4" -->
+													<!-- frameborder="0" allowfullscreen>  -->
+										<!-- </iframe> -->
+									<!-- </div> -->
+									<!-- <p class="text-center" style="font-style: italic; margin-top: 10px">Let's play intro</p> -->
+									<!-- <br></br> -->
+									<img class="img-fluid" src="assets/img/portfolio/img/WizardBreak Menu.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Menu</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/WizardBreak Beginning.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Début d'un niveau</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/WizardBreak Niveau 1.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Niveau 1 avec palissades destructibles</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/WizardBreak Niveau 2.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Ecran des missions</p></img>
+									<a class="btn btn-primary" href="https://valleix-martin.itch.io/wizard-break" target="_blank">Lien vers la page itch.io</a>
+                                    <br></br>
+									<button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Revenir au Portfolio
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- Modal 11-->
+        <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">La Nouvelle</h2>
+                                    <p class="item-intro text-muted">Jeu vidéo</p>
+									<p class="text-justify"><span class="font-weight-bold">Contexte :</span> Projet principal du Master. Réalisé à <span class="font-weight-bold">neuf</span>, en <span class="font-weight-bold">cinq mois</span>, mélangeant des étudiants de premières et deuxièmes années. L'idée initiale a été conçu par les <span class="font-weight-bold">deuxièmes années</span> qui avaient déjà imaginé le concept et ses principales mécaniques.</p>
+									<p class="text-justify"><span class="font-weight-bold">Description :</span> Vous incarnez <span class="font-weight-bold">Enola</span>, une <span class="font-weight-bold">collégienne</span> subissant du <span class="font-weight-bold">harcèlement scolaire</span>. Vous affronterez le regard des autres grâce à <span class="font-weight-bold">Lucie</span>, une autre collégienne cohabitant dans votre tête grâce au pouvoir d’une mystérieuse <span class="font-weight-bold">barrette</span>.</p>
+									<p class="text-justify"><span class="font-weight-bold">Gameplay :</span> Le jeu se décompose en deux phases. La phase <span class="font-weight-bold">narrative</span> où vous pouvez <span class="font-weight-bold">dialoguer</span> avec des élèves et la phase de <span class="font-weight-bold">plateforme</span> où vous devrez aller au bout du niveau en transformant les insultes des harceleurs en plateforme.</p>
+									<p class="text-justify"><span class="font-weight-bold">Game Design :</span> Co-conception des <span class="font-weight-bold">fonctionnalités</span> principales de la phase de plateforme, ainsi que de <span class="font-weight-bold">documents</span> de game design.</p>
+									<p class="text-justify"><span class="font-weight-bold">Animateur 2D :</span> Animation de tous les <span class="font-weight-bold">personnages</span> du jeu.</p>
+									<p class="text-justify"><span class="font-weight-bold">Artiste VFX :</span> <span class="font-weight-bold">Fumée noire</span> représentant le vide.</p>
+									<p class="text-justify"><span class="font-weight-bold">Level Builder :</span> Assemblage des éléments graphiques du niveau plateforme pour représenter le fait que <span class="font-weight-bold">l'angoisse</span> d'Enola s'intensifie.</p>
+									<p class="text-justify"><span class="font-weight-bold">Outils :</span> <span class="font-weight-bold">Unity</span> pour réaliser le <span class="font-weight-bold">level design</span>, <span class="font-weight-bold">les animations 2D</span> et le <span class="font-weight-bold">VFX</span>.</p>
+									<!-- <div class="embed-responsive embed-responsive-16by9"> -->
+										<!-- <iframe class="embed-responsive-item" id="Modal1" width="450" height="350" -->
+													<!-- src=  -->
+													<!-- "https://www.youtube.com/embed/xNFgixkO1S4" -->
+													<!-- frameborder="0" allowfullscreen>  -->
+										<!-- </iframe> -->
+									<!-- </div> -->
+									<!-- <p class="text-center" style="font-style: italic; margin-top: 10px">Let's play intro</p> -->
+									<!-- <br></br> -->
+									<img class="img-fluid" src="assets/img/portfolio/img/La Nouvelle Intro_Narration.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Introduction Narrative</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/La Nouvelle Dialogue1.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Exemple de dialogue</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/La Nouvelle Doudoune.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Deuxième exemple de dialogues</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/La Nouvelle Enola_Lucie.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Dialogue dans l'esprit d'Enola</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/La Nouvelle ChoixDialogue.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Choix de dialogue avec Anastasia l'antagoniste</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/La Nouvelle Collectable.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Phase de plateforme : Collectable</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/La Nouvelle Casiers.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Phase de plateforme : Casiers désactivés et activés</p></img>
+									<img class="img-fluid" src="assets/img/portfolio/img/La Nouvelle InsultePlateforme.jpg"><p class="text-center" style="font-style: italic; margin-top: -20px">Phase de plateforme : Insulte et plateforme transformée</p></img>
+									<a class="btn btn-primary" href="https://www.youtube.com/watch?v=wzpwGQrZCcA" target="_blank">Lien vers un Let's play explicatif</a>
+                                    <br></br>
+									<a class="btn btn-primary" href="https://lanouvelle-lejeu.fr/" target="_blank">Lien vers le site web dedié</a>
+                                    <br></br>
+									<button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Revenir au Portfolio
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 		<!-- Modal 1-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -354,7 +727,7 @@
 									<p class="text-justify"><span class="font-weight-bold">Gameplay :</span> Vous incarnez le chef d’une guilde d’archéologues et vous devez répondre aux questions que se posent les <span class="font-weight-bold">résidents</span>, en envoyant vos <span class="font-weight-bold">archéologues</span> chercher des <span class="font-weight-bold">objets</span> de l’ancienne civilisation.</p>
 									<p class="text-justify"><span class="font-weight-bold">Game Design :</span> <span class="font-weight-bold">Co-conception</span> du game design avec mon partenaire.</p>
 									<p class="text-justify"><span class="font-weight-bold">Programmation :</span> Réalisé entièrement en <span class="font-weight-bold">solo</span>.</p>
-									<p class="text-justify"><span class="font-weight-bold">Sound Design :</span>Participation à la <span class="font-weight-bold">recherche des sons</span> et <span class="font-weight-bold">modifications</span> de ces derniers pour le jeu.</p>
+									<p class="text-justify"><span class="font-weight-bold">Sound Design :</span>Participation à la <span class="font-weight-bold">recherche des sons</span> et <span class="font-weight-bold">modification</span> de ces derniers pour le jeu.</p>
 									<p class="text-justify"><span class="font-weight-bold">Outils :</span><span class="font-weight-bold"> Unity</span> comme moteur de jeu, <span class="font-weight-bold">Visual Studio</span> comme IDE (Integrated Development Environment) et <span class="font-weight-bold">reaper</span> pour modifier les sons.</p>
 									<!-- <div class="embed-responsive embed-responsive-16by9"> -->
 										<!-- <iframe class="embed-responsive-item" id="Modal1" width="450" height="350" -->
@@ -431,7 +804,7 @@
 									<img class="img-fluid" src="assets/img/portfolio/img/Taiga Cascade.png"><p class="text-center" style="font-style: italic; margin-top: -20px">Éléments de Level Design : la Cascade</p></img>
 									<img class="img-fluid" src="assets/img/portfolio/img/Taiga Checkpoint.png"><p class="text-center" style="font-style: italic; margin-top: -20px">Checkpoint</p></img>
 									<img class="img-fluid" src="assets/img/portfolio/img/Taiga Blizzard.png"><p class="text-center" style="font-style: italic; margin-top: -20px">Mecanique de respiration avec blizzard</p></img>
-									<a class="btn btn-primary" href="https://www.youtube.com/watch?v=knS04lE9oQ8" target="_blank">Lien vers un Let's play</a>
+									<a class="btn btn-primary" href="https://www.youtube.com/watch?v=knS04lE9oQ8" target="_blank">Lien vers le trailer</a>
                                     <br></br>
 									<a class="btn btn-primary" href="https://ghostmoonk.itch.io/taiga" target="_blank">Lien vers la page itch.io</a>
                                     <br></br>

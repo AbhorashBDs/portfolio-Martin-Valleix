@@ -9775,6 +9775,13 @@ button.bg-dark:focus {
   color: #fff !important;
 }
 
+.text-important {
+  color: #c5000a !important;
+  font-style: italic !important;
+  font-size: 2.5rem;
+  
+}
+
 .text-primary {
   color: #fed136 !important;
 }
