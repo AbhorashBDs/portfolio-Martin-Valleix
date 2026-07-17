@@ -3,9 +3,34 @@
 <head>
 <title>Redirection Portfolio - Martin VALLEIX</title>
 <link rel="icon" type="image/x-icon" href="favicon_portfolio.ico">
-<meta http-equiv="refresh" content="0; URL=https://www.figma.com/proto/uHVbNm9xlRah07dsbOQGHJ/Portfolio---Martin-VALLEIX?node-id=2495-497&p=f&t=GN6MvUNGTH2Y3xHO-8&scaling=contain&content-scaling=responsive&page-id=0%3A1&hotspot-hints=0&disable-default-keyboard-nav=1&hide-ui=1">
+<!--meta http-equiv="refresh" content="0; URL=https://www.figma.com/proto/uHVbNm9xlRah07dsbOQGHJ/Portfolio---Martin-VALLEIX?node-id=2495-497&p=f&t=GN6MvUNGTH2Y3xHO-8&scaling=contain&content-scaling=responsive&page-id=0%3A1&hotspot-hints=0&disable-default-keyboard-nav=1&hide-ui=1"-->
 </head>
 
+<script>
+    let seuilPetit = 480; // c'est en pixel
+    let seuilMoyen = 900; // c'est en pixel
+    let seuilHaut = 1400; // c'est en pixel
+
+    let petitURL =
+      "https://www.figma.com/proto/cCzKDfuY6KCxOfx1aZOHmz/Portfolio---Martin-VALLEIX-480?node-id=11096-10679&p=f&viewport=720%2C268%2C0.51&t=MF1rgYjwS3yqWUya-1&scaling=contain&content-scaling=responsive&page-id=0%3A1&hotspot-hints=0&disable-default-keyboard-nav=1&hide-ui=1";
+    let moyenURL =
+      "https://www.figma.com/proto/jrEeWJSLdxLSZFxEn79oE6/Portfolio---Martin-VALLEIX-900?node-id=11096-10679&viewport=894%2C365%2C0.38&t=udZzbXVhUu8ou0jo-1&scaling=contain&content-scaling=responsive&page-id=0%3A1&hotspot-hints=0&disable-default-keyboard-nav=1&hide-ui=1";
+    let hautURL =
+      "https://www.figma.com/proto/8pOKOCWCQ0WMVQZ6SOfqGH/Portfolio---Martin-VALLEIX-1400?node-id=11096-10679&viewport=947%2C503%2C0.58&t=Gn2EqKUQ4zyGPy9u-1&scaling=contain&content-scaling=responsive&page-id=0%3A1&hotspot-hints=0&disable-default-keyboard-nav=1&hide-ui=1";
+    let defaultURL =
+      "https://www.figma.com/proto/uHVbNm9xlRah07dsbOQGHJ/Portfolio---Martin-VALLEIX?node-id=2495-497&p=f&t=GN6MvUNGTH2Y3xHO-8&scaling=contain&content-scaling=responsive&page-id=0%3A1&hotspot-hints=0&disable-default-keyboard-nav=1&hide-ui=1";
+
+    let width = window.innerWidth;
+    let urlToReplace;
+
+    if (width <= seuilPetit) urlToReplace = petitURL;
+    else if (width <= seuilMoyen) urlToReplace = moyenURL;
+    else if (width <= seuilHaut) urlToReplace = hautURL;
+    else urlToReplace = defaultURL;
+
+    window.location.replace(urlToReplace);
+  </script>
+  
 <body>
 <img hidden width="0%" src="https://media.licdn.com/dms/image/v2/D4D35AQE7lGKRXpR-pA/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1729595214994?e=1758369600&v=beta&t=xK64zmZc-QcVSIU1Zxs5wInPE9oYXGvxNP4ON8MKhpE"/>
 </body>
